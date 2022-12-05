@@ -1,0 +1,222 @@
+@charset "ISO-8859-1";
+
+		body{
+			background-color:#0d2936;
+			color:white;
+			font-family: 'neue-haas-unica',sans-serif;
+			margin:0;
+		}
+		
+	/* The side navigation menu */
+.navbar {
+	float: right;
+	font-size:30px;
+	cursor:pointer;
+	margin-right: 10px;
+}
+		
+.sidenav {
+		  height: 100%; /* 100% Full-height */
+		  width: 0; /* 0 width - change this with JavaScript */
+		  position: fixed; /* Stay in place */
+		  z-index: 10; /* Stay on top */
+		  top: 0; /* Stay at the top */
+		  right: 0;
+		  background-color: #111; /* Black*/
+		  overflow-x: hidden; /* Disable horizontal scroll */
+		  padding-top: 60px; /* Place content 60px from the top */
+		  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+		  opacity: 0.9;
+		}
+		
+		/* The navigation menu links */
+.sidenav a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 40px;
+		  text-align: center;
+		  color: #818181;
+		  display: block;
+		  transition: 0.3s;
+		}
+		
+		/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+		
+		/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+		
+		/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+		  transition: margin-left .5s;
+		  padding: 20px;
+		}
+		
+		/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		
+		/* Style the header */
+.header {
+		  /*padding: 20px;*/ 
+		  height: 100px;
+		  background: rgba(0, 0, 0, 0);
+		  color: white;
+		  margin: 0;
+		  z-index:10;
+		}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 100px;
+}
+
+input[type=textt], [type=passwordd] {
+    background-color: lightgrey;
+    color: white;
+    width: 234px;
+    height: 25px;
+    border-radius: 4px;
+    border-width: 10;
+}
+		
+		/* footer */
+footer {
+			padding: 50px;
+		}
+		
+		h3 {
+			font-size: 20px;
+			
+		}
+		
+.fcolumn {
+			float: left;
+			width: 33%;
+			/*padding: 10px;*/
+			position: relative;
+		}
+		
+		p3 {
+			font-size:15px;
+		}
+		
+		a:link {
+		  text-decoration: none;
+		  color: grey;
+		}
+		
+		a:visited {
+		  text-decoration: none;
+		  color: grey;
+		}
+		
+		a:hover {
+		  text-decoration: none;
+		  color: white;
+		}
+		
+		a:active {
+		  text-decoration: none;
+		  color: white;  
+		}
+
+/* table styles */		
+table, th, td {
+  border: 10px solid #0d2936;
+  border-collapse: collapse;
+  font-family: Helvetica, sans-serif;
+}
+
+th, td {
+  background-color: grey;
+  padding: 50px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* button styles */	
+.submitBtn {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #008CBA;
+}
+
+.submitBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submitBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submitBtn:hover span {
+  padding-right: 25px;
+}
+
+.submitBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*formStyles*/
+form{
+	width:800px;
+	margin:auto;
+	padding:50px;
+	background:black;
+	font-size:14px;
+	font-family:Verdana;
+	color:white;
+	opacity: 0.9;
+	
+}
+
+label{
+	font-size: 20px;
+}
+ 
+input[type=text],[type=email],[type=phone],[type=password], select {
+  width: 390px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
